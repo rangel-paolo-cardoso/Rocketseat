@@ -7,7 +7,31 @@
     </head>
     <body>
         <script>
-            
+            var usuarios = [
+                {
+                    nome: "Diego",
+                    habilidades: ["Javascript", "ReactJS", "Redux"]
+                },
+                {
+                    nome: "Gabriel",
+                    habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+                }
+            ];
+
+            function retornaDados(vetor) {
+                let habs = '';
+                for(let p = 0; p < vetor.length; p++) {
+                    for(let person in vetor[p]) {
+                        if(person === 'habilidades') {
+                            habs += vetor[p][person].join(', ');
+                            console.log(`O ${vetor[p].nome} possui as habilidades: ${habs}`);
+                            habs = '';
+                        }
+                    }
+                }
+            }
+
+            retornaDados(usuarios);
         </script>
     </body>
 </html>
