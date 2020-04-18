@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rocketseat módulo2 exercício 4</title>
+    </head>
+    <body>
+        <div id="app">
+            <input type="text" name="nome">
+            <button onclick="adicionar()">Adicionar</button>
+        </div>
+        
+        <script>
+            let nomes = ['Diego', 'Gabriel', 'Lucas'];
+            let content = document.querySelector('div#app');
+            let lista = document.createElement('ul');
+            for (let i = 0; i < nomes.length; i += 1) {
+                let item = document.createElement('li');
+                item.innerHTML = nomes[i];
+                lista.appendChild(item);
+            }
+            content.appendChild(lista);
+
+            function adicionar() {
+                let inputElement = document.querySelector('input[name=nome]');
+                if (inputElement.value !== '') {
+                    let listItem = document.createElement('li');
+                    listItem.innerHTML = inputElement.value;
+                    lista.appendChild(listItem);
+                }
+            }
+        </script>
+    </body>
+</html>
