@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rocketseat módulo2 exercício 2</title>
+    </head>
+    <body>
+        <button id="btnCriar">Criar elemento</button>
+        <div id="app"></div>
+        
+        <script>
+            let btnCriaElemento = document.getElementById('btnCriar');
+            
+            function getRandomColor() {
+                let letters = '0123456789ABCDEF';
+                let color = '#';
+                for (let i = 0; i < 6; i += 1) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+
+            function criaQuadrado() {
+                let content = document.querySelector('div#app');
+                let quadrado = document.createElement('div');
+                quadrado.style.width = '100px';
+                quadrado.style.height = '100px';
+                quadrado.style.backgroundColor = '#f00';
+                quadrado.onmouseover = function() {
+                    quadrado.style.backgroundColor = getRandomColor();
+                };
+                content.appendChild(quadrado);
+            }
+            btnCriaElemento.addEventListener('click', criaQuadrado);
+        </script>
+    </body>
+</html>
