@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rocketseat módulo2 exercício 1</title>
+    </head>
+    <body>
+        <button id="btnCriar">Criar elemento</button>
+        <div id="app"></div>
+        <script>
+            let btnCriaElemento = document.getElementById('btnCriar');
+            btnCriaElemento.onclick = function() {
+                let content = document.querySelector('div#app');
+                let quadrado = document.createElement('div');
+                quadrado.style.width = '100px';
+                quadrado.style.height = '100px';
+                quadrado.style.backgroundColor = '#f00';
+                content.appendChild(quadrado);
+            }
+        </script>
+    </body>
+</html>
