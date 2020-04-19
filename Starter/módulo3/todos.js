@@ -7,3 +7,15 @@ let todos = [
     'Estudar Javascript',
     'Acessar comunidade Rocketseat'
 ];
+
+function renderTodos() {
+    for (todo of todos) {
+        let todoElement = document.createElement('li');
+        let todoText = document.createTextNode(todo);
+
+        todoElement.appendChild(todoText);
+        listElement.appendChild(todoElement);
+    }
+}
+
+renderTodos();
