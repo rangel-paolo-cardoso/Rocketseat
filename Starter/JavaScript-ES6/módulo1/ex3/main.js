@@ -4,9 +4,7 @@ arr.map(item => item + 10);
 
 // 3.2
 const usuario = { nome: 'Diego', idade: 23 };
-function mostraIdade(usuario) {
-  return usuario.idade;
-}
+const mostraIdade = usuario => usuario.idade;
 mostraIdade(usuario);
 
 //3.3
