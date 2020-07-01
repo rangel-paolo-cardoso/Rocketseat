@@ -10,9 +10,7 @@ mostraIdade(usuario);
 //3.3
 const nome = 'Diego';
 const idade = 23;
-function mostraUsuario(nome = 'Diego', idade = 18) {
-  return { nome, idade };
-}
+const mostraUsuario = (nome = 'Diego', idade = 18) => ({ nome, idade });
 mostraUsuario(nome, idade);
 mostraUsuario(nome);
 
