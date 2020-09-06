@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions */ \"./functions.js\");\n\n_functions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].info();\n\n//# sourceURL=webpack:///./main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions */ \"./functions.js\");\n\n_functions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].info();\nconsole.log(\"Idade: \".concat(_functions__WEBPACK_IMPORTED_MODULE_0__[\"idade\"], \" anos\"));\n\n//# sourceURL=webpack:///./main.js?");
 
 /***/ })
 
